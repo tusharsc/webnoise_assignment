@@ -49,4 +49,6 @@ as Problem statement provides
  then i fixed this problem checking database, becoz in database there is duplicate LoginId in user table, thats why it gets fails to login with user1. 
  
  *In this scenario there is db folder , in that using liquibase library values are inserted in table user while database get created.
- * that values 1 st row is repeated,
+ * that values 1 st row is repeated,that i remove from changelog.xml file
+ * after that i again run the application and debug and execute the login api with user1 , it get successful.
+ 

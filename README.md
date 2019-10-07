@@ -36,3 +36,17 @@ For further reference, please consider the following sections:
 * The output expected out of this is as follows
   * Debug why the login for user1@gmail.com fails.
   * Once the bug is discovered fix it and submit the assignment via git
+  
+##### Problem Report
+
+as Problem statement provides 
+* The app when it comes up will have 2 users created in the system -
+  * `user1@gmail.com` with password `user1ABC`
+  * `user2@gmail.com` with password `user2ABC`
+  
+  * user1@gmail.com cant login but user2@gmail.com can
+* Similarly I try it out feature on the swagger page with for the `/login` API to simulate this.
+ then i fixed this problem checking database, becoz in database there is duplicate LoginId in user table, thats why it gets fails to login with user1. 
+ 
+ *In this scenario there is db folder , in that using liquibase library values are inserted in table user while database get created.
+ * that values 1 st row is repeated,
